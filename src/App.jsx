@@ -230,7 +230,7 @@ function App() {
           </motion.div>
           <div className="relative">
             <div className="absolute -inset-4 bg-bites-gold/20 rounded-[3rem] blur-2xl" />
-            <img src="/assets/surtidos.webp" alt="Eventos" className="relative rounded-[3rem] shadow-2xl border-4 border-white w-full h-[450px] object-cover" />
+            <img src="/assets/surtidos.png" alt="Eventos" className="relative rounded-[3rem] shadow-2xl border-4 border-white w-full h-[450px] object-cover" />
           </div>
         </div>
       </section>
