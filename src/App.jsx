@@ -219,12 +219,12 @@ function App() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
             <h2 className="text-4xl md:text-5xl font-serif text-bites-brown leading-tight mb-6">Eventos & <br /><span className="text-bites-gold italic">Celebraciones</span></h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">Llevamos la magia de **Little Bites** a tus fechas más importantes. Especialistas en mesas dulces personalizadas.</p>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">Llevamos la magia de **Little Bites** a tus fechas más importantes.</p>
             <div className="grid grid-cols-2 gap-8 mb-10">
               <div className="flex items-center gap-3 text-bites-brown font-bold"><PartyPopper className="text-bites-gold" /> Cumpleaños</div>
               <div className="flex items-center gap-3 text-bites-brown font-bold"><Cake className="text-bites-gold" /> Tortas</div>
-              <div className="flex items-center gap-3 text-bites-brown font-bold"><Gift className="text-bites-gold" /> Regalos</div>
-              <div className="flex items-center gap-3 text-bites-brown font-bold"><CalendarCheck className="text-bites-gold" /> Eventos</div>
+              <div className="flex items-center gap-3 text-bites-brown font-bold"><Gift className="text-bites-gold" /> Pack para Regalo </div>
+              {/* <div className="flex items-center gap-3 text-bites-brown font-bold"><CalendarCheck className="text-bites-gold" /> Eventos</div> */}
             </div>
             <button onClick={() => window.open('https://wa.me/541159056478?text=Consulta sobre eventos', '_blank')} className="bg-bites-brown text-white px-10 py-4 rounded-2xl font-bold shadow-xl flex items-center"><MessageCircle size={30} className='px-1'/> Cotizar mi pedido</button>
           </motion.div>
