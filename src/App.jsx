@@ -223,7 +223,7 @@ function App() {
             <div className="grid grid-cols-2 gap-8 mb-10">
               <div className="flex items-center gap-3 text-bites-brown font-bold"><PartyPopper className="text-bites-gold" /> Cumpleaños</div>
               <div className="flex items-center gap-3 text-bites-brown font-bold"><Cake className="text-bites-gold" /> Tortas</div>
-              <div className="flex items-center gap-3 text-bites-brown font-bold"><Gift className="text-bites-gold" /> Pack para Regalo </div>
+              <div className="flex items-center gap-3 text-bites-brown font-bold"><Gift className="text-bites-gold" /> Packs para Regalar </div>
               {/* <div className="flex items-center gap-3 text-bites-brown font-bold"><CalendarCheck className="text-bites-gold" /> Eventos</div> */}
             </div>
             <button onClick={() => window.open('https://wa.me/541159056478?text=Consulta sobre eventos', '_blank')} className="bg-bites-brown text-white px-10 py-4 rounded-2xl font-bold shadow-xl flex items-center"><MessageCircle size={30} className='px-1'/> Cotizar mi pedido</button>
