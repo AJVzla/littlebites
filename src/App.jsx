@@ -144,39 +144,34 @@ function App() {
         </picture>
       </header>
 
-
-      {/* Categorías (Sticky con Scroll Horizontal en Mobile) */}
-      <div className="sticky top-[73px] z-40 bg-bites-cream/80 backdrop-blur-md border-b border-bites-brown/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex overflow-x-auto overflow-y-visible scrollbar-hide gap-4 px-6 py-4 md:justify-center items-center">
-            {Object.keys(PRODUCTS).map((cat) => (
-              <div key={cat} className="relative flex-shrink-0">
-                <AnimatePresence>
-                  {activeTab === cat && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0, y: 5 }}
-                      animate={{ opacity: 1, scale: 1, y: -22, rotate: 12 }}
-                      exit={{ opacity: 0, scale: 0 }}
-                      className="absolute right-0 z-10 pointer-events-none text-2xl"
-                    >
+      {/* Categorías */}
+      <div className="sticky top-[73px] z-40 bg-bites-cream/70 backdrop-blur-sm py-6 border-b border-bites-brown/5">
+        <div className="flex flex-wrap justify-center gap-6 px-4 py-4">
+          {Object.keys(PRODUCTS).map((cat) => (
+            <div key={cat} className="relative">
+              <AnimatePresence>
+                {activeTab === cat && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0, y: 10, rotate: -20 }}
+                    animate={{ opacity: 1, scale: 1, y: -25, rotate: 10 }}
+                    exit={{ opacity: 0, scale: 0, y: 10 }}
+                    className="absolute right-0 z-10 pointer-events-none"
+                    style={{ top: "-5px" }}
+                  >
+                    <span className="text-3xl filter drop-shadow-md">
                       {cat === "Brownies" ? "🍫" : cat === "Mini Dulces" ? "🧁" : cat === "Cakes" ? "🎂" : "🍪"}
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-
-                <button
-                  onClick={() => setActiveTab(cat)}
-                  className={`whitespace-nowrap px-6 py-2 rounded-full border-2 transition-all font-bold text-sm shadow-sm ${
-                    activeTab === cat 
-                    ? 'bg-bites-brown border-bites-brown text-white shadow-lg' 
-                    : 'bg-white/50 border-bites-brown/10 text-bites-brown hover:border-bites-brown'
-                  }`}
-                >
-                  {cat}
-                </button>
-              </div>
-            ))}
-          </div>
+                    </span>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+              <button
+                onClick={() => setActiveTab(cat)}
+                className={`px-10 py-2 rounded-full border-2 transition-all font-bold text-base shadow-sm ${activeTab === cat ? 'bg-bites-brown border-bites-brown text-white shadow-xl scale-105' : 'bg-white/50 border-bites-brown/10 text-bites-brown hover:border-bites-brown'}`}
+              >
+                {cat}
+              </button>
+            </div>
+          ))}
         </div>
       </div>
 
