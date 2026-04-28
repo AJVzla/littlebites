@@ -70,7 +70,7 @@ function App() {
         Swal.fire({
           title: '¡Mensaje Recibido!',
           text: `Gracias ${nombre}, revisaremos tu mensaje pronto. 🧁`,
-          imageUrl: '/littlebites/assets/fav.png', 
+          imageUrl: `${import.meta.env.BASE_URL}/assets/fav.png`, 
           imageWidth: 100,
           imageHeight: 100,
           background: '#fdf5e6',
@@ -176,7 +176,7 @@ function App() {
       </div>
 
       {/* Catálogo */}
-      <main className="relative py-16 px-6 bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/assets/banner-bg.png')" }}>
+      <main className="relative py-16 px-6 bg-cover bg-center bg-no-repeat bg-fixed" style={{ backgroundImage: "url('/littlebites/assets/banner-bg.png')" }}>
         <div className="absolute inset-0 bg-bites-cream/60 -z-10" />
         <div className="max-w-6xl mx-auto">
           <Swiper modules={[Navigation, Pagination]} spaceBetween={30} slidesPerView={1} navigation pagination={{ clickable: true }} breakpoints={{ 640: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }} className="pb-16">
