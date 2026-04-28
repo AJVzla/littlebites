@@ -70,7 +70,7 @@ function App() {
         Swal.fire({
           title: '¡Mensaje Recibido!',
           text: `Gracias ${nombre}, revisaremos tu mensaje pronto. 🧁`,
-          imageUrl: '/assets/fav.png', 
+          imageUrl: '/littlebites/assets/fav.png', 
           imageWidth: 100,
           imageHeight: 100,
           background: '#fdf5e6',
