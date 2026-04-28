@@ -26,3 +26,12 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Ocultar barra de scroll pero mantener funcionalidad */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
