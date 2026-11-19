@@ -22,3 +22,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# build (se publica en la rama gh-pages con npm run deploy)
+/dist
